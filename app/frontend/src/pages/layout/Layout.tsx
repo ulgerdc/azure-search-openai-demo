@@ -1,6 +1,6 @@
 import { Outlet, NavLink, Link } from "react-router-dom";
 
-import github from "../../assets/fimpleicon.svg";
+import fimple from "../../assets/fimpleicon.svg";
 
 import styles from "./Layout.module.css";
 
@@ -29,11 +29,11 @@ const Layout = () => {
                                 </NavLink>
                             </li>
                             <li className={styles.headerNavLeftMargin}>
-                                <a href="https://aka.ms/entgptsearch" target={"_blank"} title="Github repository link">
+                                <a href="https://aka.ms/entgptsearch" target={"_blank"} title="Fimple SDK link">
                                     <img
-                                        src={github}
-                                        alt="Github logo"
-                                        aria-label="Link to github repository"
+                                        src={fimple}
+                                        alt="Fimple logo"
+                                        aria-label="Fimple SDK link"
                                         width="20px"
                                         height="20px"
                                         className={styles.githubLogo}

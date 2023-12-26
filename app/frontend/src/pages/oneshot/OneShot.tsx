@@ -8,7 +8,6 @@ import { Answer, AnswerError } from "../../components/Answer";
 import { QuestionInput } from "../../components/QuestionInput";
 import { ExampleList } from "../../components/Example";
 import { AnalysisPanel, AnalysisPanelTabs } from "../../components/AnalysisPanel";
-import { SettingsButton } from "../../components/SettingsButton/SettingsButton";
 import { useLogin, getToken } from "../../authConfig";
 import { useMsal } from "@azure/msal-react";
 import { TokenClaimsDisplay } from "../../components/TokenClaimsDisplay";
@@ -145,7 +144,6 @@ export function Component(): JSX.Element {
     return (
         <div className={styles.oneshotContainer}>
             <div className={styles.oneshotTopSection}>
-                <SettingsButton className={styles.settingsButton} onClick={() => setIsConfigPanelOpen(!isConfigPanelOpen)} />
                 <h1 className={styles.oneshotTitle}>Chat with Fimple's SDK</h1>
                 <div className={styles.oneshotQuestionInput}>
                     <QuestionInput placeholder="Example: How To Check Concurrent Update?" disabled={isLoading} onSend={question => makeApiRequest(question)} />
