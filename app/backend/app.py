@@ -62,9 +62,9 @@ async def redirect():
     return ""
 
 
-@bp.route("/favicon.ico")
-async def favicon():
-    return await bp.send_static_file("favicon.ico")
+@bp.route("/favicon_fimple.ico")
+async def favicon_fimple():
+    return await bp.send_static_file("favicon_fimple.ico")
 
 
 @bp.route("/assets/<path:path>")
